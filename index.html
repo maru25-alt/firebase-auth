@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Firebase Auth</title>
+</head>
+<body>
+     <h1>Firebase Authentication Methods</h1>
+    <div class="signin__page">
+        <h2>Welcome Back </h2>
+        <form action="" id="emailForm">
+              <h4>Signin with Email and Password</h4>
+            <input id="email" type="email" placeholder="Email">
+            <input id="password" type="password" placeholder="Password">
+            <div class="sign__buttons">
+                <button type="submit" id="signin">Signin With  </button>
+                
+                <button type="submit" id="signup">Signup  With </button>
+            </div> 
+        </form>
+        <span>OR</span>
+        <form  id="telephoneForm">
+            <input id="telephone" type="tel" placeholder="Telephone">
+            <button type="submit" id="number">Login with Phone Number</button>
+        </form>
+        <span>OR</span>
+        <button id="facebook">Login with facebook</button>
+        <button id="google">Login with Google</button>
+        <button id="twitter">Login with Twitter</button>
+        <button id="github">Login with Github</button>
+        <button id="anonymous">Vistor</button>
+        
+    </div>
+    <div class="admin__page">
+        <h2>Welcome to Logged in User Dashboard</h2>
+        <div id="user"></div>
+         <button  id="logout">
+             Logout
+         </button>
+    </div>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAGFBNK84l0w5qU8D9FD3f2o4zooMp6cQ",
+    authDomain: "maru-firegram.firebaseapp.com",
+    databaseURL: "https://maru-firegram.firebaseio.com",
+    projectId: "maru-firegram",
+    storageBucket: "maru-firegram.appspot.com",
+    messagingSenderId: "551353205889",
+    appId: "1:551353205889:web:3af8a16ddddcbb6468b980"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+<script src="./main.js"></script>
+</body>
+</html>
